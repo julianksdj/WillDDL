@@ -188,7 +188,7 @@ void WillDDLAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce
             // Do LEFT (MONO) Channel
             // Read the Input
             float xn = channelData[sample];
-            // Read the output of the delay at m_nReadIndex
+            // Read the output of the delay at readIndex
             float yn;
             if(channel == 0)
                 yn = pBufferL[readIndex[channel]];
